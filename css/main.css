@@ -73,6 +73,8 @@ button {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .list {
@@ -478,13 +480,17 @@ button {
 
 .hero {
   background-color: #2f303a;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 118px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
@@ -495,7 +501,16 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
-  min-width: 360px;
+  margin: 0 auto;
+  width: 360px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 .hero__btn {
