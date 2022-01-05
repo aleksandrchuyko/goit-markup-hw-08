@@ -517,29 +517,19 @@ button {
   margin: 30px auto 0 auto;
 }
 
-.about {
-  padding-bottom: 0;
-}
-
 .about__list {
-  display: flex;
+  margin-bottom: -30px;
 }
 
 .about__item {
-  width: 270px;
-  margin-right: 30px;
-}
-
-.about__item:last-child {
-  margin-right: 0;
+  margin-bottom: 30px;
 }
 
 .about__picture-wrap {
-  max-width: 270px;
+  max-width: 450px;
   min-height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,7 +542,14 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-title-color);
-  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about__item-title {
+    text-align: left;
+  }
 }
 
 .about__item-text {
@@ -560,6 +557,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-top: 10px;
 }
 
 .work__title {
