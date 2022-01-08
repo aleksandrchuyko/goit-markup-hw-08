@@ -7,7 +7,10 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -16,13 +19,21 @@
     <header class="header">
       <div class="header__container container">
         <nav class="header-navigation">
-          <a class="logo link" href=""><span class="logo__marker">Web</span>Studio</a>
+          <a class="logo link" href=".\index.html"
+            ><span class="logo__marker">Web</span>Studio</a
+          >
           <ul class="header-navigation__list list">
             <li class="header-navigation__item">
-              <a class="header-navigation__link link header-navigation__link--current" href="./index.html">Студия</a>
+              <a
+                class="header-navigation__link link header-navigation__link--current"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="header-navigation__item">
-              <a class="header-navigation__link link" href="./portfolio.html">Портфолио</a>
+              <a class="header-navigation__link link" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="header-navigation__item">
               <a class="header-navigation__link link" href="">Контакты</a>
@@ -31,7 +42,9 @@
         </nav>
         <ul class="header-contacts list">
           <li class="header-contacts__item">
-            <a class="header-contacts__link link" href="mailto:info@devstudio.com"
+            <a
+              class="header-contacts__link link"
+              href="mailto:info@devstudio.com"
               ><svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -65,26 +78,57 @@
               <button class="projects__filter-btn" type="button">Все</button>
             </li>
             <li class="projects__filter-item">
-              <button class="projects__filter-btn" type="button">Веб-сайты</button>
+              <button class="projects__filter-btn" type="button">
+                Веб-сайты
+              </button>
             </li>
             <li class="projects__filter-item">
-              <button class="projects__filter-btn" type="button">Приложения</button>
+              <button class="projects__filter-btn" type="button">
+                Приложения
+              </button>
             </li>
             <li class="projects__filter-item">
               <button class="projects__filter-btn" type="button">Дизайн</button>
             </li>
             <li class="projects__filter-item">
-              <button class="projects__filter-btn" type="button">Маркетинг</button>
+              <button class="projects__filter-btn" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
           <ul class="projects__list list">
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-1.jpg" alt="Веб-сайт" />
+                <!-- <img src="./images/img-project-1.jpg" alt="Веб-сайт" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-project-1-1x.jpg 1x,
+                      ./images/img-project-1-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-1-tab-1x.jpg 1x,
+                      ./images/img-project-1-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-1-mob-1x.jpg 1x,
+                      ./images/img-project-1-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img-project-1-1x.jpg" alt="Веб-сайт" />
+                </picture>
                 <p class="projects__overlay-text">
-                  Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые
-                  сервера конкурентов.
+                  Технокряк это современная площадка распространения
+                  коронавируса. Компании используют эту платформу для цифрового
+                  шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
 
@@ -95,23 +139,77 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-2.jpg" alt="Дизайн" />
+                <!-- <img src="./images/img-project-2.jpg" alt="Дизайн" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-project-2-1x.jpg 1x,
+                      ./images/img-project-2-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-2-tab-1x.jpg 1x,
+                      ./images/img-project-2-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-2-mob-1x.jpg 1x,
+                      ./images/img-project-2-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img-project-2-1x.jpg" alt="Дизайн" />
+                </picture>
                 <p class="projects__overlay-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ipsam et hic tempora esse labore totam ipsa. Excepturi quasi non, aperiam
-                  earum tenetur hic! Temporibus adipisci vero soluta nam enim?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum, ipsam et hic tempora esse labore totam ipsa.
+                  Excepturi quasi non, aperiam earum tenetur hic! Temporibus
+                  adipisci vero soluta nam enim?
                 </p>
               </div>
               <div class="projects__item-border">
-                <h2 class="projects__item-title">Постер New Orlean vs Golden Star</h2>
+                <h2 class="projects__item-title">
+                  Постер New Orlean vs Golden Star
+                </h2>
                 <p class="projects__item-text">Дизайн</p>
               </div>
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-3.jpg" alt="Приложение" />
+                <!-- <img src="./images/img-project-3.jpg" alt="Приложение" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-project-3-1x.jpg 1x,
+                      ./images/img-project-3-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-3-tab-1x.jpg 1x,
+                      ./images/img-project-3-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-3-mob-1x.jpg 1x,
+                      ./images/img-project-3-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img-project-3-1x.jpg" alt="Приложение" />
+                </picture>
                 <p class="projects__overlay-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure fugiat facilis natus quaerat suscipit ea delectus exercitationem, consequatur
-                  aperiam quod ipsum reprehenderit assumenda, veritatis odit.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+                  fugiat facilis natus quaerat suscipit ea delectus
+                  exercitationem, consequatur aperiam quod ipsum reprehenderit
+                  assumenda, veritatis odit.
                 </p>
               </div>
               <div class="projects__item-border">
@@ -121,10 +219,36 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-4.jpg" alt="Маркетинг" />
+                <!-- <img src="./images/img-project-4.jpg" alt="Маркетинг" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-project-4-1x.jpg 1x,
+                      ./images/img-project-4-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-4-tab-1x.jpg 1x,
+                      ./images/img-project-4-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-4-mob-1x.jpg 1x,
+                      ./images/img-project-4-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img-project-4-1x.jpg" alt="Маркетинг" />
+                </picture>
                 <p class="projects__overlay-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nemo praesentium. Accusantium, distinctio? Soluta ut in, corporis perferendis
-                  rerum voluptate repellat officiis minima asperiores! Quas, eum!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae, nemo praesentium. Accusantium, distinctio? Soluta ut
+                  in, corporis perferendis rerum voluptate repellat officiis
+                  minima asperiores! Quas, eum!
                 </p>
               </div>
               <div class="projects__item-border">
@@ -134,10 +258,35 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-5.jpg" alt="Приложение" />
+                <!-- <img src="./images/img-project-5.jpg" alt="Приложение" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-project-5-1x.jpg 1x,
+                      ./images/img-project-5-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-5-tab-1x.jpg 1x,
+                      ./images/img-project-5-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-5-mob-1x.jpg 1x,
+                      ./images/img-project-5-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img-project-5-1x.jpg" alt="Приложение" />
+                </picture>
                 <p class="projects__overlay-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi illum culpa impedit ex dicta, mollitia, earum itaque dolorem consequatur
-                  autem ea at debitis iure libero illo!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  commodi illum culpa impedit ex dicta, mollitia, earum itaque
+                  dolorem consequatur autem ea at debitis iure libero illo!
                 </p>
               </div>
               <div class="projects__item-border">
@@ -147,10 +296,36 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-6.jpg" alt="Веб-сайт" />
+                <!-- <img src="./images/img-project-6.jpg" alt="Веб-сайт" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-project-6-1x.jpg 1x,
+                      ./images/img-project-6-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-6-tab-1x.jpg 1x,
+                      ./images/img-project-6-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-6-mob-1x.jpg 1x,
+                      ./images/img-project-6-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img-project-6-1x.jpg" alt="Веб-сайт" />
+                </picture>
                 <p class="projects__overlay-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, quo dicta neque error aperiam delectus alias ipsa ut possimus! Quo,
-                  esse. Ea ullam recusandae labore numquam cum earum?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Voluptates, quo dicta neque error aperiam delectus alias ipsa
+                  ut possimus! Quo, esse. Ea ullam recusandae labore numquam cum
+                  earum?
                 </p>
               </div>
               <div class="projects__item-border">
@@ -160,10 +335,36 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-7.jpg" alt="Дизайн" />
+                <!-- <img src="./images/img-project-7.jpg" alt="Дизайн" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-project-7-1x.jpg 1x,
+                      ./images/img-project-7-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-7-tab-1x.jpg 1x,
+                      ./images/img-project-7-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-7-mob-1x.jpg 1x,
+                      ./images/img-project-7-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img-project-7-1x.jpg" alt="Дизайн" />
+                </picture>
                 <p class="projects__overlay-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, saepe dignissimos. Et laudantium dicta commodi, tempore odit error facere
-                  incidunt nisi consequuntur dolore. Et facilis dicta illo deleniti sapiente!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, saepe dignissimos. Et laudantium dicta commodi, tempore
+                  odit error facere incidunt nisi consequuntur dolore. Et
+                  facilis dicta illo deleniti sapiente!
                 </p>
               </div>
               <div class="projects__item-border">
@@ -173,10 +374,36 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-8.jpg" alt="Маркетинг" />
+                <!-- <img src="./images/img-project-8.jpg" alt="Маркетинг" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-project-8-1x.jpg 1x,
+                      ./images/img-project-8-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-8-tab-1x.jpg 1x,
+                      ./images/img-project-8-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-8-mob-1x.jpg 1x,
+                      ./images/img-project-8-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img-project-8-1x.jpg" alt="Маркетинг" />
+                </picture>
                 <p class="projects__overlay-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente quas vero, consequuntur adipisci ut dicta sed in id, aut animi hic
-                  omnis assumenda inventore esse aliquid illo, necessitatibus voluptates?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae sapiente quas vero, consequuntur adipisci ut dicta
+                  sed in id, aut animi hic omnis assumenda inventore esse
+                  aliquid illo, necessitatibus voluptates?
                 </p>
               </div>
               <div class="projects__item-border">
@@ -186,10 +413,36 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-9.jpg" alt="Приложение" />
+                <!-- <img src="./images/img-project-9.jpg" alt="Приложение" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-project-9-1x.jpg 1x,
+                      ./images/img-project-9-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-9-tab-1x.jpg 1x,
+                      ./images/img-project-9-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-project-9-mob-1x.jpg 1x,
+                      ./images/img-project-9-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img-project-9-1x.jpg" alt="Приложение" />
+                </picture>
                 <p class="projects__overlay-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quis, alias doloremque a enim sapiente. Soluta inventore ex ipsum in quisquam
-                  accusamus eveniet quas obcaecati!
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Beatae quis, alias doloremque a enim sapiente. Soluta
+                  inventore ex ipsum in quisquam accusamus eveniet quas
+                  obcaecati!
                 </p>
               </div>
               <div class="projects__item-border">
@@ -205,19 +458,33 @@
       <div class="footer__container container">
         <div class="footer__links-section">
           <div class="footer__left">
-            <a class="logo link" href=""><span class="logo__marker">Web</span>Studio</a>
+            <a class="logo link" href=""
+              ><span class="logo__marker">Web</span>Studio</a
+            >
             <address class="footer-address">
               <ul class="footer-adress__list list">
                 <li class="footer-address__item">
-                  <a class="footer-address__link link" href="https://goo.gl/maps/UkCp5fHZR93qL6xV6" target="_blank" rel="noopener noreferrer"
+                  <a
+                    class="footer-address__link link"
+                    href="https://goo.gl/maps/UkCp5fHZR93qL6xV6"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >г. Киев, пр-т Леси Украинки, 26</a
                   >
                 </li>
                 <li class="footer-address__item">
-                  <a class="footer-address__contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  <a
+                    class="footer-address__contacts-link link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
                 </li>
                 <li class="footer-adress__item">
-                  <a class="footer-address__contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  <a
+                    class="footer-address__contacts-link link"
+                    href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
@@ -260,7 +527,13 @@
           <strong class="subscribe__title">подпишитесь на рассылку</strong>
           <form action="#" name="subscribe__form">
             <div class="subscribe__wrapper">
-              <input type="email" class="subscribe__mail" name="subscribe-mail" placeholder="E-mail" required />
+              <input
+                type="email"
+                class="subscribe__mail"
+                name="subscribe-mail"
+                placeholder="E-mail"
+                required
+              />
               <button type="submit" class="subscribe__btn main-button">
                 <span>Подписаться</span>
                 <svg class="subscribe__send-icon" width="24" height="24">
@@ -282,10 +555,16 @@
           </button>
           <ul class="menu-navigation list">
             <li class="menu-navigation__item">
-              <a class="menu-navigation__link menu-navigation__link--current link" href="./index.html">Студия</a>
+              <a
+                class="menu-navigation__link menu-navigation__link--current link"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="menu-navigation__item">
-              <a class="menu-navigation__link link" href="./portfolio.html">Портфолио</a>
+              <a class="menu-navigation__link link" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="menu-navigation__item">
               <a class="menu-navigation__link link" href="">Контакты</a>
@@ -295,10 +574,18 @@
         <div class="menu-bottom">
           <ul class="menu-contacts list">
             <li class="menu-contacts__item">
-              <a class="menu-contacts__link menu-contacts__link--current link" href="tel:+380961111111"> <span>+38 096 111 11 11</span></a>
+              <a
+                class="menu-contacts__link menu-contacts__link--current link"
+                href="tel:+380961111111"
+              >
+                <span>+38 096 111 11 11</span></a
+              >
             </li>
             <li class="menu-contacts__item">
-              <a class="menu-contacts__link link" href="mailto:info@devstudio.com">
+              <a
+                class="menu-contacts__link link"
+                href="mailto:info@devstudio.com"
+              >
                 <span>info@devstudio.com</span>
               </a>
             </li>
