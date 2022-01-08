@@ -19,10 +19,10 @@
           <a class="logo link" href=""><span class="logo__marker">Web</span>Studio</a>
           <ul class="header-navigation__list list">
             <li class="header-navigation__item">
-              <a class="header-navigation__link link" href="./index.html">Студия</a>
+              <a class="header-navigation__link link header-navigation__link--current" href="./index.html">Студия</a>
             </li>
             <li class="header-navigation__item">
-              <a class="header-navigation__link link header-navigation__link--current" href="./portfolio.html">Портфолио</a>
+              <a class="header-navigation__link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header-navigation__item">
               <a class="header-navigation__link link" href="">Контакты</a>
@@ -47,6 +47,11 @@
             >
           </li>
         </ul>
+        <button type="button" class="header__menu-btn">
+          <svg class="header__menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -76,7 +81,7 @@
           <ul class="projects__list list">
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-1.jpg" alt="Веб-сайт" width="370" />
+                <img src="./images/img-project-1.jpg" alt="Веб-сайт" />
                 <p class="projects__overlay-text">
                   Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые
                   сервера конкурентов.
@@ -90,7 +95,7 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-2.jpg" alt="Дизайн" width="370" />
+                <img src="./images/img-project-2.jpg" alt="Дизайн" />
                 <p class="projects__overlay-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ipsam et hic tempora esse labore totam ipsa. Excepturi quasi non, aperiam
                   earum tenetur hic! Temporibus adipisci vero soluta nam enim?
@@ -103,7 +108,7 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-3.jpg" alt="Приложение" width="370" />
+                <img src="./images/img-project-3.jpg" alt="Приложение" />
                 <p class="projects__overlay-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure fugiat facilis natus quaerat suscipit ea delectus exercitationem, consequatur
                   aperiam quod ipsum reprehenderit assumenda, veritatis odit.
@@ -116,7 +121,7 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-4.jpg" alt="Маркетинг" width="370" />
+                <img src="./images/img-project-4.jpg" alt="Маркетинг" />
                 <p class="projects__overlay-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nemo praesentium. Accusantium, distinctio? Soluta ut in, corporis perferendis
                   rerum voluptate repellat officiis minima asperiores! Quas, eum!
@@ -129,7 +134,7 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-5.jpg" alt="Приложение" width="370" />
+                <img src="./images/img-project-5.jpg" alt="Приложение" />
                 <p class="projects__overlay-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi illum culpa impedit ex dicta, mollitia, earum itaque dolorem consequatur
                   autem ea at debitis iure libero illo!
@@ -142,7 +147,7 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-6.jpg" alt="Веб-сайт" width="370" />
+                <img src="./images/img-project-6.jpg" alt="Веб-сайт" />
                 <p class="projects__overlay-text">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, quo dicta neque error aperiam delectus alias ipsa ut possimus! Quo,
                   esse. Ea ullam recusandae labore numquam cum earum?
@@ -155,7 +160,7 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-7.jpg" alt="Дизайн" width="370" />
+                <img src="./images/img-project-7.jpg" alt="Дизайн" />
                 <p class="projects__overlay-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, saepe dignissimos. Et laudantium dicta commodi, tempore odit error facere
                   incidunt nisi consequuntur dolore. Et facilis dicta illo deleniti sapiente!
@@ -168,7 +173,7 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-8.jpg" alt="Маркетинг" width="370" />
+                <img src="./images/img-project-8.jpg" alt="Маркетинг" />
                 <p class="projects__overlay-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente quas vero, consequuntur adipisci ut dicta sed in id, aut animi hic
                   omnis assumenda inventore esse aliquid illo, necessitatibus voluptates?
@@ -181,7 +186,7 @@
             </li>
             <li class="projects__item">
               <div class="projects__item-wrapper">
-                <img src="./images/img-project-9.jpg" alt="Приложение" width="370" />
+                <img src="./images/img-project-9.jpg" alt="Приложение" />
                 <p class="projects__overlay-text">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quis, alias doloremque a enim sapiente. Soluta inventore ex ipsum in quisquam
                   accusamus eveniet quas obcaecati!
@@ -198,56 +203,58 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__left">
-          <a class="logo link" href=""><span class="logo__marker">Web</span>Studio</a>
-          <address class="footer-address">
-            <ul class="footer-adress__list list">
-              <li class="footer-address__item">
-                <a class="footer-address__link link" href="https://goo.gl/maps/UkCp5fHZR93qL6xV6" target="_blank" rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer__links-section">
+          <div class="footer__left">
+            <a class="logo link" href=""><span class="logo__marker">Web</span>Studio</a>
+            <address class="footer-address">
+              <ul class="footer-adress__list list">
+                <li class="footer-address__item">
+                  <a class="footer-address__link link" href="https://goo.gl/maps/UkCp5fHZR93qL6xV6" target="_blank" rel="noopener noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a class="footer-address__contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="footer-adress__item">
+                  <a class="footer-address__contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__right">
+            <strong class="footer__social-title">присоединяйтесь</strong>
+            <ul class="footer__social-list socials list">
+              <li class="socials__item">
+                <a class="socials__link" href=""
+                  ><svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-address__item">
-                <a class="footer-address__contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="socials__item">
+                <a class="socials__link" href=""
+                  ><svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-adress__item">
-                <a class="footer-address__contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="socials__item">
+                <a class="socials__link" href=""
+                  ><svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href=""
+                  ><svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__right">
-          <strong class="footer__social-title">присоединяйтесь</strong>
-          <ul class="footer__social-list socials list">
-            <li class="socials__item">
-              <a class="socials__link" href=""
-                ><svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href=""
-                ><svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href=""
-                ><svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href=""
-                ><svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe">
           <strong class="subscribe__title">подпишитесь на рассылку</strong>
@@ -265,5 +272,54 @@
         </div>
       </div>
     </footer>
+    <div class="menu is-hidden">
+      <div class="menu__container container">
+        <div class="menu-top">
+          <button type="button" class="menu__close-btn">
+            <svg class="menu__icon-close" width="28" height="28">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="menu-navigation list">
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link menu-navigation__link--current link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-bottom">
+          <ul class="menu-contacts list">
+            <li class="menu-contacts__item">
+              <a class="menu-contacts__link menu-contacts__link--current link" href="tel:+380961111111"> <span>+38 096 111 11 11</span></a>
+            </li>
+            <li class="menu-contacts__item">
+              <a class="menu-contacts__link link" href="mailto:info@devstudio.com">
+                <span>info@devstudio.com</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-socials list">
+            <li class="menu-socials__item">
+              <a class="menu-socials__link link" href="">Instagram</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link link" href="">Twitter</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link link" href="">Facebook</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
